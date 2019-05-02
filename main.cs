@@ -1,11 +1,7 @@
-using matweaver.swf.Workflow;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Linq;
-using Amazon;
-using Amazon.SimpleWorkflow;
-using Amazon.SimpleWorkflow.Model;
+using matweaver.swf.Workflow;
+
 
 namespace matweaver.swf {
 	class swf
@@ -30,10 +26,7 @@ namespace matweaver.swf {
 			//start the workers
 			Task.Run(() => myWorkflow.Worker("Activity1"));
 			Task.Run(() => myWorkflow.Worker("Activity1"));
-
-
 			Console.Read();
-
 		}
 	}
 }
