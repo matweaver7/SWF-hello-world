@@ -2,7 +2,6 @@ using System;
 using System.Threading.Tasks;
 using matweaver.swf.Workflow;
 
-
 namespace matweaver.swf {
 	class swf
 	{
